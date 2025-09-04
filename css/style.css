@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-primary: #584a99;
+  --color-secondary: #efe8f6;
+  --color-light: #f7f7f7;
+  --color-error: #f75e4b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/*  HEADER   */
+header {
+  max-width: calc(100% - 20px);
+  margin: 20px auto 50px auto;
+}
+header h1 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+/* MAIN */
+
+main {
+  max-width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto 0 auto;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin-right: 40px; */
+}
+
+#products > div {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 0 auto 40px auto;
+}
+
+#products img {
+  width: 300px;
+  border-radius: 25px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-secondary);
+  width: 100%;
+  border-radius: 25px;
+  height: 120px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.product-info h3 {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+}
+
+.product-info div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info span {
+  font-size: 1.1rem;
+  color: grey;
+}
+
+.product-info button {
+  background-color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 10px 20px;
+  transition: all 0.2s ease-in;
+}
+.product-info button:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 40%;
+}
+@media (min-width: 1000px) {
+  #products {
+    margin-right: 40px;
+  }
+}
